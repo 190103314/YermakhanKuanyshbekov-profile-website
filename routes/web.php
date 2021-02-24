@@ -41,3 +41,8 @@ Route::get('/post/create', function () {
         'body' => 'body'
     ]);
 });
+
+Route::get('post', function () {
+    $post = Post::find(1);
+    return $post;
+});
