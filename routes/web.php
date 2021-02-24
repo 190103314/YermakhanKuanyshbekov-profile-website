@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\DB;
+use App\Models\Post;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,3 +34,10 @@ Route::get('/contact', function () {
 Route::get('/welcome', function () {
     return view('welcome');
 })->name('welcome');
+
+Route::get('/post/create', function () {
+    DB::table('post')->insert([
+        'title' => 'title',
+        'body' => 'body'
+    ]);
+});
