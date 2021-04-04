@@ -15,5 +15,6 @@
         <input type="file" name="photos">
         <button type="submit">Add</button>
     </form>
+    
 </body>
 </html>

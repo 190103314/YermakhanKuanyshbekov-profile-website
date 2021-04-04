@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\DB;
 use App\Models\Post;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\UploadController;
+use App\Http\Controllers\MailController;
 
 /*
 |--------------------------------------------------------------------------
@@ -58,3 +59,4 @@ Route::get('post/{id}', [BlogController::class, 'get_post']);
 
 Route::post('form/upload', [UploadController::class, 'uploadsubmit'])->name('add-form');
 Route::get('form/upload', [UploadController::class,'uploadform']);
+Route::get('mail/send',[MailController::class, 'send']);

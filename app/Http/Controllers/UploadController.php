@@ -17,9 +17,6 @@ class UploadController extends Controller
         return view('form.upload');
     }
     public function uploadsubmit(Request $request) {
-
-        // $test = $request->file('photos')->getError();
-        // dd($test);
         $request->validate([
             'name' => 'required',
             'surname' => 'required',
@@ -31,9 +28,6 @@ class UploadController extends Controller
         
         $request->photos->move(public_path('uploads'), $newImageName);
 
-
-        // dd($test);
- 
         Form::create([
             'name' => $request->name,
             'surname' => $request->surname,
