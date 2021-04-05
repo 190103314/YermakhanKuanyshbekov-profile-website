@@ -1,3 +1,1 @@
-{{$demo->receiver}}
-Salem 
-{{$demo->sender}}
+{{$demo->receiver}}, Salem! Qalaisyn?
