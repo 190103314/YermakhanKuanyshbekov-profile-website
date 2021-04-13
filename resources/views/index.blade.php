@@ -59,10 +59,10 @@
             	<div class="templemo_hometop_img"><img src="https://image.flaticon.com/icons/png/512/114/114675.png" alt="templatemo home image"></div>
             </div>
             <div class="col-md-6"><br><br><br>
-            	<div class="templatemo_hometop_title">This is my mini portfolio</div>
                 <div class="templatemo_hometop_subtitle"></div>
-                <h3>This mini profile is special for back end lab. It contains three pages, main, about, contact. This portfolio is very simple.</h3>
-                <h3>I used template cv website and I wrote information about myself, and I think about page is little bit interesting.</h3>
+                <h3>{{ __('lang.welcome')}}</h3>
+                <h3>{{ __('lang.title')}}</h3>
+                <h3>{{ __('lang.body')}}</h3>
             </div>
             <div class="clear"></div>
             </div>       		

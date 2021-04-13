@@ -26,6 +26,11 @@ Route::get('/home', function () {
     return view('index');
 })->name('home');
 
+Route::get('/{lang}', function ($lang) {
+    App::setlocale($lang);
+    return view('index');
+});
+
 Route::get('/about', function () {
     return view('about');
 })->name('about');
